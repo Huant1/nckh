@@ -1,0 +1,27 @@
+{% extends 'Function/base.html' %}
+
+{% block content %}
+    {% if result %}
+    <center>
+        <h1>Ket qua la</h1>
+    </center>
+    <table class="table table-striped table-bordered table-sm">  
+        <thead class="thead-dark">  
+        <tr>  
+            <th> ID</th>  
+            <th> Link</th>  
+            <th> PUblished</th>   
+        </tr>  
+        </thead>  
+        <tbody>  
+    {% for row in result %}  
+        <tr>  
+            <td>{{ row.0 }}</td>  
+            <td>{{ row.1 }}</td>  
+            <td>{{ row.2 }}</td>     
+        </tr>  
+    {% endfor %}
+    {% endif %}
+    <a href="{% url 'home' %}">
+    <button>Go to Dashboard</button>
+{% endblock content %}
