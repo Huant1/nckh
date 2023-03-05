@@ -20,4 +20,3 @@ CREATE TABLE setting(
 );
 
 INSERT into setting (name, time) VALUES ('admin', 120);
--------------------------------
