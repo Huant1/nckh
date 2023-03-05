@@ -11,6 +11,7 @@ id INT NOT NULL PRIMARY KEY auto_increment,
    	link VARCHAR(255),
     	published VARCHAR(255)
 )
+
 SET SQL_SAFE_UPDATES = 0;
 
 
