@@ -1,0 +1,25 @@
+{% comment %} {% extends 'core/base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'core/styles/style.css' %}">
+{% endblock css %}
+
+{% block content %}
+    <main class='home'>
+        <h2>Comming soon ....</h2>
+        <a href="{% url 'Account:signup' %}">
+            <h2>Sign Up</h2>
+        </a>
+
+        <a href="{% url 'Account:login' %}">
+            <h2>Log In</h2>
+        </a>
+
+        <a href="{% url 'Function:feed'%}">
+            <h2>Function</h2>
+        </a>
+
+        <a href=""></a>
+    </main>
+{% endblock content %} {% endcomment %}
